@@ -17,7 +17,6 @@ exports.post = async (event) => {
     };
     const res = await webhook.send(msg);
     console.log(res);
-    console.log(res);
 
     return;
   } catch (err) {
