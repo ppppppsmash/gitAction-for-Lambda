@@ -29,11 +29,11 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 #          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
-#      - name: Execute Lambda
-#        run: sls invoke -f slack
-#        env:
-#          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Execute Lambda
+        run: sls invoke -f test
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 #          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
 #      - name: Notify result to slack

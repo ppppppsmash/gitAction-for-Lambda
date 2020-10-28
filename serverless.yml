@@ -14,7 +14,7 @@ package:
     - docker-compose.yml
 
 functions:
-  slack:
+  test:
     handler: src/index.post
-    description: "Post message to Slack"
+    description: "git actions to lambda"
     timeout: 60
